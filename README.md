@@ -1,5 +1,5 @@
 ```bash
-###get请求
+//get请求
 axios.get(URL)
 .then(function (response){
     console.log(response);
@@ -8,7 +8,7 @@ axios.get(URL)
     console.log(error);
 });
 
-###带header的get请求
+//带header的get请求
 axios.get(URL, {
     headers: {
         'TOKEN': 'token'
