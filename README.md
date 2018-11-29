@@ -1,16 +1,27 @@
 ```bash
-//get请求
-axios.get(URL)
-.then(function (response){
-    console.log(response);
+// get请求
+axios.get(URL, {
+    headers: {
+        'TOKEN': 'token'
+    },
+    params: { 
+    	'key': 'value' 
+    }
+})
+.then(function (response) {
+   console.log(response);
 })
 .catch(function (error) {
     console.log(error);
 });
 
-//带header的get请求
-axios.get(URL, {
-    headers: {
+// post请求
+axios.post(URL, {
+	param1: string,
+    param2: string
+},
+{
+	headers: {
         'TOKEN': 'token'
     }
 })
