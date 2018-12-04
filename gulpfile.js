@@ -100,5 +100,5 @@ gulp.task('watch', function() {
   // 监控 html 文件，有变动则执行 html 任务
   gulp.watch('src/**/*.html', ['html']);
   // 监控 dist 目录下除 css 目录以外的变动（如js，图片等），则自动刷新页面
-  gulp.watch(['dist/**/*', '!dist/css/**/*']).on('change', browserSync.reload);
+  gulp.watch(['dist/**/*', '!dist/public/css/**/*']).on('change', browserSync.reload);
 });
